@@ -34,7 +34,7 @@ def make_single_commit(counter):
 def push_commits():
     """Pushuje commity na GitHub"""
     try:
-        result = subprocess.run(['git', 'push', 'origin', 'main'], 
+        result = subprocess.run(['git', 'push', 'origin', 'master'], 
                               capture_output=True, text=True, timeout=30)
         if result.returncode == 0:
             print("Push successful")
