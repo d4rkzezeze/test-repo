@@ -117,7 +117,7 @@ def main():
             
             # Push co 3 commity
             push_counter += 1
-            if push_counter >= 20:
+            if push_counter >= 1000:
                 # Użyj force-with-lease zamiast zwykłego force
                 if push_with_lease():
                     push_counter = 0
