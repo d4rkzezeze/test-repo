@@ -86,9 +86,7 @@ def main():
                     time.sleep(60)
             
             # Losowe opóźnienie (30-120 sekund)
-            delay = random.uniform(0, 1)
-            print(f"Next commit in {delay:.1f}s...")
-            time.sleep(delay)
+            print(f"Next commit in progress...")
             
         except KeyboardInterrupt:
             print("\n\nZatrzymywanie...")
