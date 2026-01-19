@@ -75,7 +75,7 @@ def push_force():
 def push_with_lease():
     """Bezpieczniejsza wersja force push"""
     try:
-        result = subprocess.run(['git', 'push', '--force-with-lease', 'origin', 'master'], 
+        result = subprocess.run(['git', 'push', '--force-with-lease', 'origin', 'main'], 
                               capture_output=True, text=True, timeout=30, check=False)
         
         if result.returncode == 0:
