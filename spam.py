@@ -121,9 +121,6 @@ def main():
                 # Użyj force-with-lease zamiast zwykłego force
                 if push_with_lease():
                     push_counter = 0
-                    delay = random.uniform(10, 30)  # Krótsze opóźnienie po sukcesie
-                    print(f"Waiting {delay:.1f}s...")
-                    time.sleep(delay)
                 else:
                     # Przy błędzie czekaj dłużej
                     print("Waiting 60s after error...")
